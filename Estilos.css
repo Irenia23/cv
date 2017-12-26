@@ -91,3 +91,20 @@ a:hover{
 .block {
 	display: block;
 }
+
+header > ul{
+	list-style-type: none;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-right: 3.8%;
+}
+
+header p:first-of-type{
+	font-size: 2.2em;
+	font-weight: bold;
+}
+
+.Referencia{
+	font-size: 1.1em;
+	font-weight: bold;
+}
