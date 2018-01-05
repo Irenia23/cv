@@ -1,0 +1,165 @@
+body{
+  font-family: Helvetica Neue;
+  background: url("../images/woman3.jpg") top no-repeat;
+  background-size: contain;
+  background-color: #edeeef;
+  margin: 0 auto;
+  color: #555555;
+}
+
+header{
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: .5%;
+}
+
+.header_title{
+  margin: 0 auto;
+  padding-top: 98px;
+  margin-bottom: .7%;
+  font-size: 52px;
+  font-weight: 300;
+}
+
+.header__subtitle{
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-weight: medium;
+  color: #4A90E2;
+  margin-bottom: 3.5%;
+}
+
+.header__list{
+  list-style: none;
+  padding: 0;
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+
+.header__list > li > a{
+  text-decoration: none;
+  color: #555555;
+}
+
+.main-container{
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.container-1{
+  margin: 0 auto;
+  margin-top: 45%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.container-2{
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow: hidden;
+  padding-left: 2%;
+}
+
+.section{
+  margin: 0 auto;
+  border-top: 5px solid #4A90E2;
+  background-color: #FFFFFF;
+  padding: 3.5%;
+  margin-bottom: 20px;
+  width: 41%;
+  border-radius: .7%;
+  max-width: 100%;
+  position: relative;
+}
+
+header, .section{
+  box-shadow: -1px 3px 7px #b2b2b2;
+}
+
+.section>h1{
+  margin: 0 auto;
+  font-size: 1.7em;
+  padding-left: 40px;
+  font-weight: 300;
+  margin-bottom: 6.5%;
+}
+
+.header_title, .section>h1{ 
+  color: #000000;
+}
+
+.section__margin{
+  margin-right: 20px;
+}
+
+.section__p{
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.left{
+  float: left;
+}
+
+
+.header__img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 7px solid rgba(130, 130, 130, 0.2);
+}
+
+.section__img{
+  position: absolute;
+}
+
+.img-container{
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  position: absolute;
+  bottom: 78%;
+}
+
+.space{
+  margin-bottom: 3px;
+}
+
+.claro{
+  font-size: 1em;
+  color: #89898B;
+}
+
+.oscuro{
+  font-size: 1.1em;
+}
+
+.header__list a:hover{
+  color: #4A90E2;
+}
+
+/*---------------------------------Media Query--------------------------------------------*/
+
+@media (max-width: 640px) {
+
+  .section{
+  clear: both;
+  width: 91%;
+  }
+  
+  .header__img{
+  width: 110px;
+  height: 110px;
+  }
+  
+  .img-container{
+  bottom: 82%;
+  }
+
+.header_title{
+  padding-top: 65px;
+}
+
+}
