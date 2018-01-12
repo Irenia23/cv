@@ -1,31 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 body{
-  font-family: Helvetica Neue;
+  font-family: 'Montserrat', Helvetica Neue, sans-serif;
   background: url("../images/woman3.jpg") top no-repeat;
   background-size: contain;
   background-color: #edeeef;
   margin: 0 auto;
   color: #555555;
+  font-size: .9em;
 }
 
 header{
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   position: relative;
   background-color: #FFFFFF;
   border-radius: .5%;
+  width: 100%;
 }
 
 .header_title{
   margin: 0 auto;
   padding-top: 98px;
-  margin-bottom: .7%;
+  margin-bottom: .4%;
   font-size: 52px;
   font-weight: 300;
 }
 
 .header__subtitle{
   margin: 0 auto;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: medium;
   color: #4A90E2;
   margin-bottom: 3.5%;
@@ -48,30 +60,33 @@ header{
   max-width: 1024px;
 }
 
+.subcontainer{
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .container-1{
-  margin: 0 auto;
+  margin: 0;
   margin-top: 45%;
-  padding-left: 2%;
-  padding-right: 2%;
+  max-width: 100%;
 }
 
 .container-2{
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  padding-left: 2%;
+  max-width: 100%;
 }
 
 .section{
-  margin: 0 auto;
+  margin: 0;
   border-top: 5px solid #4A90E2;
   background-color: #FFFFFF;
-  padding: 3.5%;
+  padding: 37px 3.5% 3.5%;
   margin-bottom: 20px;
-  width: 41%;
+  width: 42%;
   border-radius: .7%;
-  max-width: 100%;
-  position: relative;
 }
 
 header, .section{
@@ -79,28 +94,38 @@ header, .section{
 }
 
 .section>h1{
-  margin: 0 auto;
-  font-size: 1.7em;
+  position: relative;
+  margin: 0;
+  font-size: 1.8em;
   padding-left: 40px;
   font-weight: 300;
-  margin-bottom: 6.5%;
+  margin-bottom: 30px;
 }
 
 .header_title, .section>h1{ 
   color: #000000;
 }
 
-.section__margin{
-  margin-right: 20px;
-}
-
 .section__p{
   text-align: justify;
-  line-height: 1.5em;
+  line-height: 1.7em;
+}
+
+.li-margin{
+  margin-top: 25px;
+  margin-bottom: 1.5em;
+}
+
+.p-margin{
+  margin-bottom: 1.7em;
 }
 
 .left{
   float: left;
+}
+
+.right{
+  float: right;
 }
 
 
@@ -111,8 +136,12 @@ header, .section{
   border: 7px solid rgba(130, 130, 130, 0.2);
 }
 
-.section__img{
+.section .section__icon-about, .section__icon-suitcase, .section__icon-volunteer, .section__icon-skills, .section__icon-education, .section__icon-language, .section__icon-reference{
+  width: 28px;
+  height: 28px;
+  color: #000;
   position: absolute;
+  left: 0px;
 }
 
 .img-container{
@@ -128,12 +157,14 @@ header, .section{
 }
 
 .claro{
-  font-size: 1em;
+  font-size: .9em;
   color: #89898B;
 }
 
 .oscuro{
-  font-size: 1.1em;
+  font-size: 1.2em;
+  color: #2f2f30;
+  font-weight: bolder;
 }
 
 .header__list a:hover{
@@ -145,8 +176,15 @@ header, .section{
 @media (max-width: 640px) {
 
   .section{
-  clear: both;
-  width: 91%;
+    clear: both;
+  }
+  
+  .section.left{
+  width: 93%;
+  }
+
+  .section.right{
+  width: 93%;
   }
   
   .header__img{
@@ -155,11 +193,11 @@ header, .section{
   }
   
   .img-container{
-  bottom: 82%;
+  bottom: 79%;
   }
 
 .header_title{
-  padding-top: 65px;
+  padding-top: 70px;
 }
 
 }
